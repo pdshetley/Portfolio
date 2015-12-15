@@ -5,6 +5,13 @@ body {
   background:#FFF;
   font-family: "Alef", Helvetica, Arial, sans-serif;
 }
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
 h1, h2, h4, h5, h6 {
   font-weight:400;
   text-transform: uppercase;
@@ -89,7 +96,7 @@ ul li {
   margin:0 20px;
 }
 
-.button {
+.button, input[type="submit"] {
   background-color: #ADA400;
   color:#fff;
   border-radius: 8px;
@@ -97,6 +104,12 @@ ul li {
   display: block;
   width:150px;
   margin:2em auto;
+  border:none;
+}
+input[type="submit"] {
+  float:right;
+  margin:1em 0;
+  padding:1em 2em;
 }
 
 /* ABOUT */
@@ -187,4 +200,62 @@ ul li {
 .item-img {     
   background-color:#7a548f;
   z-index:0;      
+}
+
+/* MANIFESTO */\
+.manifesto {
+  margin-bottom: 4em;
+}
+.manifesto h2 {
+  color: #ADA400;
+}
+.manifesto ul {
+  display: block;
+  margin-bottom: 4em;
+}
+.manifesto ul li {
+  display: block;
+}
+.manifesto ul li:nth-child(3n+1) {
+  font-size:1.4em;
+}
+.manifesto ul li:nth-child(3n+2) {
+  font-size:0.95em;
+}
+.manifesto ul li:nth-child(3n+3) {
+  font-size:1.2em;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #D8D8D8;
+  padding:1em 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding:10px;
+  border: none;
+  margin:0 0 1em;
+  float:left;
+  display: block;
+  -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    width:100%;
+}
+textarea {
+  min-height:100px;
+}
+.contact h2 {
+  color:#fff;
+}
+
+/* CASE STUDIES */
+.project-header {
+  margin:6em 0 1.25em;
+}
+.project-heading {
+  margin:3em 0 1em;
 }
