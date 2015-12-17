@@ -166,10 +166,13 @@
           <img src="images/Seattle-Map.png">
         </div>
         <div class="one-half">
-          <form>
-            <input type="text" placeholder="Name:">
-            <input type="email" placeholder="Email:">
-            <textarea placeholder="Message:"></textarea>
+          <form action="https://getsimpleform.com/messages?form_api_token=ad27a0719dfb4fb76b52c70a504f618c" method="post">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <input type='hidden' name='redirect_to' value='http://www.pdshetley.com/' />
+            <!-- all your input fields here.... -->
+            <input type='text' name='name' placeholder="Name:" />
+            <input type='email' name='email' placeholder="Email:" />
+            <textarea name="message" placeholder="Message:"></textarea>
             <input type="submit" value="Submit">
           </form>
         </div>
