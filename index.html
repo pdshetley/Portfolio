@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+
+  <title>Patricia Shetley</title>
+
+  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Palanquin|Palanquin+Dark" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    
+      <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/S-Logo-Outline.png"></a>
+          <div class="name">PATRICIA SHETLEY</div>
+        </div>
+
+        <ul class="menu">
+          <li><a href="AboutMe.html">About</a></li>
+          <li><a href="index.html#work">Projects</a></li>
+          <li><a href="Patricia-Shetley-Resume.pdf">Resume</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>   
+      </div>
+      </nav>
+  </header>
+
+  <main>
+    <section class="background hero-image" id="background">
+      <div class="container">
+        <h1 class= "hero-title">PATRICIA SHETLEY</h1>
+        <h2 class="subhead">UX/UI and Brand Designer</h2>
+        <p class="hero-statement">I create and implement print and digital design solutions to achieve business goals.<br>Using left- and right-brain talents, I design for users and the organizations who love them.</p>
+        <!-- <img src="images/Top-Background.png"> -->
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="one-third">
+          <a href="botanica.html"><img src="images/Botanica-Final-Logo.png"></a>
+          <p class="projects-description">a line of skincare products derived from organic fruits, herbs, and flowers</p>
+        </div>
+        <div class="one-third">
+          <img class="product-image-wide" src="images/gatherly-Logo-final.png">
+          <img class="product-image-narrow" src="images/gatherly-Logo-final.png">
+          <p class="projects-description">a web app that helps people create menus for get togethers and celebrations</p>
+        </div>
+        <div class="one-third">
+          <img src="images/Pure-Clearing-Logo-Final.png">
+          <p class="projects-description">a company that remedies “bad” energy through space clearing and contemporary feng shui</p>
+        </div>
+        <a href="Projects.html#projects" class="button">Projects</a>
+      </div>
+    </section>
+
+    <section class="contact contact-image" id="contact">
+      <div class="container">
+        <h1 class="contact-title">Let's Work Together</h1>
+        <h3>Have a project or opportunity you’d like to discuss? I’d love to hear all about it.</h3>
+        <div class="contact-field">
+          <form action="https://getsimpleform.com/messages?form_api_token=ad27a0719dfb4fb76b52c70a504f618c" method="post">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <input type='hidden' name='redirect_to' value='http://www.pdshetley.com/' />
+            <!-- all your input fields here.... -->
+            <input type='text' name='name' placeholder="Name:" />
+            <input type='email' name='email' placeholder="Email:" />
+            <textarea name="message" placeholder="Message:"></textarea>
+            <input type="submit" value="Submit" class="form-submit">
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2016 Patricia Shetley</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/jquery.filterizr.js"></script>
+  <script src="js/controls.js"></script>
+  <script type="text/javascript">
+      $(function() {
+          //Initialize filterizr with default options
+          $('.work').filterizr();
+      });
+    </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44141815-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
