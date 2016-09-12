@@ -39,14 +39,21 @@ h2 {
 }
 .subhead {
   margin-top: 1px;
+  margin-bottom: 50px;
   line-height: 0;
 }
-h3 {
+h3.contact-sub {
   font-size: 18px;
   font-weight: 400;
   color: #FFF;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6C6D6F;
+  margin-top: 20px;
 }
 .hero-title {
   color: #FFF;
@@ -58,7 +65,7 @@ p {
   font-family: 'Palanquin', sans-serif;
   text-align: left;
   line-height: 140%;
-  margin-top: 50px;
+
 }
 .projects-description {
   margin-top: 10px;
@@ -123,6 +130,7 @@ a {
 
  .product-image-wide {
     display: none;
+    margin-bottom: 18px;
  }
 
  .product-image-narrow {
@@ -408,8 +416,17 @@ textarea {
 }
 
 /* CASE STUDIES */
-.project-header {
+.project-header.clearing {
   margin:3em 0 1.25em;
+}
+
+.project-header.gatherly {
+  margin:3em 0 1.25em;
+}
+
+.project-header.botanica {
+  margin: 0 5em;
+  margin-top: 3em;
 }
 .project-heading {
   margin:3em 0 1em;
